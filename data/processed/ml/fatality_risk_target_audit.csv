@@ -1,0 +1,11 @@
+metric,count
+"Initial events (2,224 matched)",2224
+Valid numeric death values,499
+Zero-death records,236
+Positive-death records,263
+Negative-death records,0
+Invalid/unparseable values,1725
+Final labeled sample,499
+Positive class (label=1),263
+Negative class (label=0),236
+Excluded from labeled sample,1725

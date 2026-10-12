@@ -1,0 +1,5 @@
+check_type,count,decision
+Duplicate rows,0,No action needed
+Duplicate Atlas_USGS_eqID,0,No action needed
+Duplicate Comcat_USGS_eqID,0,No action needed
+Potential real-world duplicates,0,No action needed

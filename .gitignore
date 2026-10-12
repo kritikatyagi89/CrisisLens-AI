@@ -1,0 +1,20 @@
+
+# Python cache and environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.env.*
+
+# Local IDE files
+.vscode/
+.idea/
+
+# Temporary files
+*.log
+.ipynb_checkpoints/
+
+# Raw and intermediate datasets: review before sharing
+data/raw/
+data/interim/

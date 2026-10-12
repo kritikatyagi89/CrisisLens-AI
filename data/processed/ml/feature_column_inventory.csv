@@ -1,0 +1,169 @@
+source,column_name,meaning,data_type,missing_in_labeled,classification,reason
+Constraints,Atlas USGS eqID,See metadata,object,N/A,Identifier/metadata,Event identifier for joining tables
+Constraints,Comcat USGS eqID,See metadata,object,N/A,Identifier/metadata,Event identifier for joining tables
+Constraints,id_info,See metadata,object,1,Identifier/metadata,ID compatibility indicator
+Constraints,DateTime,See metadata,object,N/A,Candidate input,Core earthquake parameters
+Constraints,lat,See metadata,float64,N/A,Candidate input,Core earthquake parameters
+Constraints,lon,See metadata,float64,N/A,Candidate input,Core earthquake parameters
+Constraints,depth (km),See metadata,float64,N/A,Candidate input,Core earthquake parameters
+Constraints,mag,See metadata,float64,N/A,Candidate input,Core earthquake parameters
+Constraints,mag type,See metadata,object,N/A,Needs decision,Unclassified
+Constraints,Atlas v4 type,See metadata,object,N/A,Needs decision,Unclassified
+Constraints,ISO_code,See metadata,object,N/A,Candidate input,Event characteristics
+Constraints,Fault,See metadata,int64,N/A,Candidate input,Event characteristics
+Constraints,Intensity Observations,See metadata,int64,N/A,Candidate input,Data quality indicators
+Constraints,Ground Motion Recordings,See metadata,int64,N/A,Candidate input,Data quality indicators
+Exposure,Atlas_USGS_eqID,See metadata,object,N/A,Identifier/metadata,Duplicate of Constraints or event identifier
+Exposure,Comcat_USGS_eqID,See metadata,object,N/A,Identifier/metadata,Duplicate of Constraints or event identifier
+Exposure,id_info,See metadata,object,N/A,Identifier/metadata,Duplicate of Constraints or event identifier
+Exposure,DateTime,See metadata,object,N/A,Identifier/metadata,Duplicate of Constraints or event identifier
+Exposure,lat,See metadata,float64,N/A,Identifier/metadata,Duplicate of Constraints or event identifier
+Exposure,lon,See metadata,float64,N/A,Identifier/metadata,Duplicate of Constraints or event identifier
+Exposure,depth(km),See metadata,float64,N/A,Identifier/metadata,Duplicate of Constraints or event identifier
+Exposure,mag,See metadata,float64,N/A,Identifier/metadata,Duplicate of Constraints or event identifier
+Exposure,mag_type,See metadata,object,N/A,Identifier/metadata,Duplicate of Constraints or event identifier
+Exposure,Atlas_v4_type,See metadata,object,N/A,Identifier/metadata,Duplicate of Constraints or event identifier
+Exposure,ISO_code,See metadata,object,N/A,Identifier/metadata,Duplicate of Constraints or event identifier
+Exposure,Version_at_release,See metadata,int64,N/A,Identifier/metadata,Metadata
+Exposure,location_string,See metadata,object,N/A,Identifier/metadata,Metadata
+Exposure,MMI_III,See metadata,float64,N/A,Needs decision,ShakeMap-derived exposure - availability depends on timeline
+Exposure,MMM_IV,See metadata,float64,N/A,Needs decision,Unclassified
+Exposure,MMI_V,See metadata,float64,N/A,Needs decision,ShakeMap-derived exposure - availability depends on timeline
+Exposure,MMI_VI,See metadata,float64,N/A,Needs decision,ShakeMap-derived exposure - availability depends on timeline
+Exposure,MMI_VII,See metadata,float64,N/A,Needs decision,ShakeMap-derived exposure - availability depends on timeline
+Exposure,MMI_VIII,See metadata,float64,N/A,Needs decision,ShakeMap-derived exposure - availability depends on timeline
+Exposure,MMI_IX,See metadata,float64,N/A,Needs decision,ShakeMap-derived exposure - availability depends on timeline
+Exposure,MMI_X,See metadata,float64,N/A,Needs decision,ShakeMap-derived exposure - availability depends on timeline
+Exposure,Max_MMI,See metadata,object,N/A,Needs decision,ShakeMap-derived exposure - availability depends on timeline
+USGS,usgs_id,USGS earthquake catalog field,object,N/A,Needs decision,USGS catalog data - availability depends on timeline
+USGS,usgs_time,USGS earthquake catalog field,object,N/A,Needs decision,USGS catalog data - availability depends on timeline
+USGS,usgs_latitude,USGS earthquake catalog field,float64,N/A,Needs decision,USGS catalog data - availability depends on timeline
+USGS,usgs_longitude,USGS earthquake catalog field,float64,N/A,Needs decision,USGS catalog data - availability depends on timeline
+USGS,usgs_magnitude,USGS earthquake catalog field,float64,N/A,Needs decision,USGS catalog data - availability depends on timeline
+Losses,Atlas_USGS_eqID,See metadata,object,N/A,Identifier/metadata,Duplicate of Constraints or event identifier
+Losses,Comcat_USGS_eqID,See metadata,object,N/A,Identifier/metadata,Duplicate of Constraints or event identifier
+Losses,id_info,See metadata,object,N/A,Identifier/metadata,Duplicate of Constraints or event identifier
+Losses,DateTime,See metadata,object,N/A,Identifier/metadata,Duplicate of Constraints or event identifier
+Losses,lat,See metadata,float64,N/A,Identifier/metadata,Duplicate of Constraints or event identifier
+Losses,lon,See metadata,float64,N/A,Identifier/metadata,Duplicate of Constraints or event identifier
+Losses,depth(km),See metadata,float64,N/A,Identifier/metadata,Duplicate of Constraints or event identifier
+Losses,mag,See metadata,float64,N/A,Identifier/metadata,Duplicate of Constraints or event identifier
+Losses,mag_type,See metadata,object,N/A,Identifier/metadata,Duplicate of Constraints or event identifier
+Losses,Atlas_v4_type,See metadata,object,N/A,Identifier/metadata,Duplicate of Constraints or event identifier
+Losses,ISO_code,See metadata,object,N/A,Identifier/metadata,Duplicate of Constraints or event identifier
+Losses,Pref_total_deaths,See metadata,float64,N/A,Target,Primary target variable (death count)
+Losses,Pref_total_deaths_src,See metadata,object,N/A,Identifier/metadata,Source information for target
+Losses,Pref_econ_loss,See metadata,float64,N/A,Potential leakage,Post-event economic impact (not target)
+Losses,Pref_econ_loss_src,See metadata,object,N/A,Identifier/metadata,Source information
+Losses,PDE_shakingDeaths,See metadata,float64,N/A,Potential leakage,Post-event death impact (alternative source)
+Losses,PDE_shakingDeathsFlag,See metadata,object,N/A,Potential leakage,Post-event death impact (alternative source)
+Losses,PDE_shakingDeathsComm,See metadata,object,N/A,Potential leakage,Post-event death impact (alternative source)
+Losses,PDE_landslideDeaths,See metadata,float64,N/A,Potential leakage,Post-event death impact (alternative source)
+Losses,PDE_landslideDeathsFlag,See metadata,object,N/A,Potential leakage,Post-event death impact (alternative source)
+Losses,PDE_landslideDeathsComm,See metadata,object,N/A,Potential leakage,Post-event death impact (alternative source)
+Losses,PDE_tsunamiDeaths,See metadata,float64,N/A,Potential leakage,Post-event death impact (alternative source)
+Losses,PDE_tsunamiDeathsFlag,See metadata,object,N/A,Potential leakage,Post-event death impact (alternative source)
+Losses,PDE_tsunamiDeathsComm,See metadata,object,N/A,Potential leakage,Post-event death impact (alternative source)
+Losses,PDE_otherDeaths,See metadata,float64,N/A,Potential leakage,Post-event death impact (alternative source)
+Losses,PDE_otherDeathsFlag,See metadata,object,N/A,Potential leakage,Post-event death impact (alternative source)
+Losses,PDE_otherDeathsComm,See metadata,object,N/A,Potential leakage,Post-event death impact (alternative source)
+Losses,PDE_missing,See metadata,float64,N/A,Needs decision,Unclassified
+Losses,PDE_missingFlag,See metadata,object,N/A,Identifier/metadata,Data quality flag
+Losses,PDE_missingComm,See metadata,object,N/A,Identifier/metadata,Source text/comments
+Losses,PDE_undiffDeaths,See metadata,float64,N/A,Potential leakage,Post-event death impact (alternative source)
+Losses,PDE_undiffDeathsFlag,See metadata,object,N/A,Potential leakage,Post-event death impact (alternative source)
+Losses,PDE_undiffDeathsComm,See metadata,object,N/A,Potential leakage,Post-event death impact (alternative source)
+Losses,PDE_totalDeaths,See metadata,float64,N/A,Potential leakage,Post-event death impact (alternative source)
+Losses,PDE_totalDeathsFlag,See metadata,object,N/A,Potential leakage,Post-event death impact (alternative source)
+Losses,PDE_totalDeathsComm,See metadata,object,N/A,Potential leakage,Post-event death impact (alternative source)
+Losses,PDE_injured,See metadata,float64,N/A,Potential leakage,Post-event injury impact
+Losses,PDE_injuredFlag,See metadata,object,N/A,Potential leakage,Post-event injury impact
+Losses,PDE_injuredComm,See metadata,object,N/A,Potential leakage,Post-event injury impact
+Losses,PDE_displaced,See metadata,float64,N/A,Potential leakage,Post-event displacement impact
+Losses,PDE_displacedFlag,See metadata,object,N/A,Potential leakage,Post-event displacement impact
+Losses,PDE_displacedComm,See metadata,object,N/A,Potential leakage,Post-event displacement impact
+Losses,PDE_buildDamaged,See metadata,float64,N/A,Potential leakage,Post-event building damage
+Losses,PDE_buildDamagedFlag,See metadata,object,N/A,Potential leakage,Post-event building damage
+Losses,PDE_buildDamagedComm,See metadata,object,N/A,Potential leakage,Post-event building damage
+Losses,PDE_buildDestroyed,See metadata,float64,N/A,Potential leakage,Post-event building damage
+Losses,PDE_buildDestroyedFlag,See metadata,object,N/A,Potential leakage,Post-event building damage
+Losses,PDE_buildDestroyedComm,See metadata,object,N/A,Potential leakage,Post-event building damage
+Losses,PDE_buildDamagedDestroyed,See metadata,float64,N/A,Potential leakage,Post-event building damage
+Losses,PDE_buildDamagedDestroyedFlag,See metadata,object,N/A,Potential leakage,Post-event building damage
+Losses,PDE_buildDamagedDestroyedComm,See metadata,object,N/A,Potential leakage,Post-event building damage
+Losses,PDE_econLosses,See metadata,float64,N/A,Potential leakage,Post-event economic loss
+Losses,PDE_econLossesFlag,See metadata,object,N/A,Potential leakage,Post-event economic loss
+Losses,PDE_econLossesComm,See metadata,object,N/A,Potential leakage,Post-event economic loss
+Losses,PDE_tsunamiFlag,See metadata,int64,N/A,Identifier/metadata,Data quality flag
+Losses,PDE_landslideFlag,See metadata,int64,N/A,Identifier/metadata,Data quality flag
+Losses,PDE_liquefactionFlag,See metadata,int64,N/A,Identifier/metadata,Data quality flag
+Losses,PDE_fireFlag,See metadata,int64,N/A,Identifier/metadata,Data quality flag
+Losses,Utsu_totalDeaths,See metadata,float64,N/A,Potential leakage,Post-event death impact (alternative source)
+Losses,Utsu_totalDeathsFlag,See metadata,object,N/A,Potential leakage,Post-event death impact (alternative source)
+Losses,Utsu_totalDeathsComm,See metadata,object,N/A,Potential leakage,Post-event death impact (alternative source)
+Losses,Utsu_injured,See metadata,float64,N/A,Potential leakage,Post-event injury impact
+Losses,Utsu_injuredFlag,See metadata,object,N/A,Potential leakage,Post-event injury impact
+Losses,Utsu_injuredComm,See metadata,object,N/A,Potential leakage,Post-event injury impact
+Losses,Utsu_buildDamaged,See metadata,float64,N/A,Potential leakage,Post-event building damage
+Losses,Utsu_buildDamagedFlag,See metadata,object,N/A,Potential leakage,Post-event building damage
+Losses,Utsu_buildDamagedComm,See metadata,object,N/A,Potential leakage,Post-event building damage
+Losses,Utsu_tsunamiFlag,See metadata,int64,N/A,Identifier/metadata,Data quality flag
+Losses,Utsu_landslideFlag,See metadata,int64,N/A,Identifier/metadata,Data quality flag
+Losses,Utsu_fireFlag,See metadata,int64,N/A,Identifier/metadata,Data quality flag
+Losses,NCEI_missing,See metadata,float64,N/A,Needs decision,Unclassified
+Losses,NCEI_missingFlag,See metadata,object,N/A,Identifier/metadata,Data quality flag
+Losses,NCEI_missingComm,See metadata,object,N/A,Identifier/metadata,Source text/comments
+Losses,NCEI_totalDeaths,See metadata,float64,N/A,Potential leakage,Post-event death impact (alternative source)
+Losses,NCEI_totalDeathsFlag,See metadata,object,N/A,Potential leakage,Post-event death impact (alternative source)
+Losses,NCEI_totalDeathsComm,See metadata,object,N/A,Potential leakage,Post-event death impact (alternative source)
+Losses,NCEI_injured,See metadata,float64,N/A,Potential leakage,Post-event injury impact
+Losses,NCEI_injuredFlag,See metadata,object,N/A,Potential leakage,Post-event injury impact
+Losses,NCEI_injuredComm,See metadata,object,N/A,Potential leakage,Post-event injury impact
+Losses,NCEI_buildDamaged,See metadata,float64,N/A,Potential leakage,Post-event building damage
+Losses,NCEI_buildDamagedFlag,See metadata,object,N/A,Potential leakage,Post-event building damage
+Losses,NCEI_buildDamagedComm,See metadata,object,N/A,Potential leakage,Post-event building damage
+Losses,NCEI_buildDestroyed,See metadata,float64,N/A,Potential leakage,Post-event building damage
+Losses,NCEI_buildDestroyedFlag,See metadata,object,N/A,Potential leakage,Post-event building damage
+Losses,NCEI_buildDestroyedComm,See metadata,object,N/A,Potential leakage,Post-event building damage
+Losses,NCEI_econLosses,See metadata,float64,N/A,Potential leakage,Post-event economic loss
+Losses,NCEI_econLossesFlag,See metadata,object,N/A,Potential leakage,Post-event economic loss
+Losses,NCEI_econLossesComm,See metadata,object,N/A,Potential leakage,Post-event economic loss
+Losses,EMDAT_totalDeaths,See metadata,float64,N/A,Potential leakage,Post-event death impact (alternative source)
+Losses,EMDAT_totalDeathsFlag,See metadata,float64,N/A,Potential leakage,Post-event death impact (alternative source)
+Losses,EMDAT_totalDeathsComm,See metadata,object,N/A,Potential leakage,Post-event death impact (alternative source)
+Losses,EMDAT_injured,See metadata,float64,N/A,Potential leakage,Post-event injury impact
+Losses,EMDAT_injuredFlag,See metadata,float64,N/A,Potential leakage,Post-event injury impact
+Losses,EMDAT_injuredComm,See metadata,object,N/A,Potential leakage,Post-event injury impact
+Losses,EMDAT_displaced,See metadata,float64,N/A,Potential leakage,Post-event displacement impact
+Losses,EMDAT_displacedFlag,See metadata,float64,N/A,Potential leakage,Post-event displacement impact
+Losses,EMDAT_displacedComm,See metadata,object,N/A,Potential leakage,Post-event displacement impact
+Losses,EMDAT_econLosses,See metadata,float64,N/A,Potential leakage,Post-event economic loss
+Losses,EMDAT_econLossesFlag,See metadata,object,N/A,Potential leakage,Post-event economic loss
+Losses,EMDAT_econLossesComm,See metadata,object,N/A,Potential leakage,Post-event economic loss
+Losses,EMDAT_tsunamiFlag,See metadata,int64,N/A,Identifier/metadata,Data quality flag
+Losses,EMDAT_landslideFlag,See metadata,int64,N/A,Identifier/metadata,Data quality flag
+Losses,EMDAT_liquefactionFlag,See metadata,int64,N/A,Identifier/metadata,Data quality flag
+Losses,EMDAT_fireFlag,See metadata,int64,N/A,Identifier/metadata,Data quality flag
+Losses,other_shakingDeaths,See metadata,float64,N/A,Potential leakage,Post-event death impact (alternative source)
+Losses,other_shakingDeathsFlag,See metadata,object,N/A,Potential leakage,Post-event death impact (alternative source)
+Losses,other_shakingDeathsComm,See metadata,object,N/A,Potential leakage,Post-event death impact (alternative source)
+Losses,other_landslideDeaths,See metadata,float64,N/A,Potential leakage,Post-event death impact (alternative source)
+Losses,other_landslideDeathsFlag,See metadata,object,N/A,Potential leakage,Post-event death impact (alternative source)
+Losses,other_landslideDeathsComm,See metadata,object,N/A,Potential leakage,Post-event death impact (alternative source)
+Losses,other_tsunamiDeaths,See metadata,float64,N/A,Potential leakage,Post-event death impact (alternative source)
+Losses,other_tsunamiDeathsFlag,See metadata,object,N/A,Potential leakage,Post-event death impact (alternative source)
+Losses,other_tsunamiDeathsComm,See metadata,object,N/A,Potential leakage,Post-event death impact (alternative source)
+Losses,other_totalDeaths,See metadata,float64,N/A,Potential leakage,Post-event death impact (alternative source)
+Losses,other_totalDeathsFlag,See metadata,object,N/A,Potential leakage,Post-event death impact (alternative source)
+Losses,other_totalDeathsComm,See metadata,object,N/A,Potential leakage,Post-event death impact (alternative source)
+Losses,other_injured,See metadata,float64,N/A,Potential leakage,Post-event injury impact
+Losses,other_injuredFlag,See metadata,object,N/A,Potential leakage,Post-event injury impact
+Losses,other_injuredComm,See metadata,object,N/A,Potential leakage,Post-event injury impact
+Losses,other_displaced,See metadata,float64,N/A,Potential leakage,Post-event displacement impact
+Losses,other_displacedFlag,See metadata,object,N/A,Potential leakage,Post-event displacement impact
+Losses,other_displacedComm,See metadata,object,N/A,Potential leakage,Post-event displacement impact
+Losses,other_econLosses,See metadata,float64,N/A,Potential leakage,Post-event economic loss
+Losses,other_econLossesFlag,See metadata,float64,N/A,Potential leakage,Post-event economic loss
+Losses,other_econLossesComm,See metadata,float64,N/A,Potential leakage,Post-event economic loss
+Losses,other_tsunamiFlag,See metadata,int64,N/A,Identifier/metadata,Data quality flag
+Losses,other_landslideFlag,See metadata,int64,N/A,Identifier/metadata,Data quality flag
